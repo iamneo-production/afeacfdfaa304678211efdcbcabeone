@@ -73,6 +73,9 @@
                 }
                 cells.forEach((_,index)=>{const cell= document.createElement('div');
             cells.classList.add('cell');
-        })
-            }
-    </body>
+        cell.addEventListener('click',()=>handleClick(index));
+    board.appendChild(cell);
+});
+</script>
+ </body>
+ </html>
