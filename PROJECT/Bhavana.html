@@ -41,7 +41,16 @@
 
                 ];
                 for (const combo of winningCombos){
-                    const[a,]
+                    const[a,b,c]=combo;
+                    if(cells[a]&&cells[a]===cells[b]&&cells[a]===cells[c]){
+                        return cells[a];
+                    }
+                }
+                if (cells.every(cell=>cells)){
+                    return'T';
+                }
+                function handleClick(index){
+                    if(cells[index]||checkWinner())
                 }
             }
     </body>
