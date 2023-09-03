@@ -61,9 +61,18 @@
                     if(winner){
                         if(winner==='T'){
                             alert("Its a Tie!");
-                            
+
+                        }else{
+                            alert(`${winner}wins!`);
                         }
+                    }else{
+                        currentPlayer=currentPlayer==='X'?'O':'X';
                     }
+
+                    
                 }
+                cells.forEach((_,index)=>{const cell= document.createElement('div');
+            cells.classList.add('cell');
+        })
             }
     </body>
